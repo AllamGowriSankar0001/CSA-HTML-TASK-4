@@ -1,64 +1,57 @@
-# My Portfolio - AGS.dev
+# AGS.Dev – Portfolio Site
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a passionate **Web Developer**.
+Live personal portfolio showcasing Gowri Sankar’s work, skills, and contact links. Deployed at **[allamgowrisankar0001.github.io/CSA-HTML-TASK-4](https://allamgowrisankar0001.github.io/CSA-HTML-TASK-4/)**.
 
-## 🌐 Live Link
+## Overview
 
-Check out the live version of my portfolio here: **[https://allamgowrisankar0001.github.io/Portfolio/](https://allamgowrisankar0001.github.io/Portfolio/)**
+- Minimal multi-page site (Home, About, Projects, Contact) with a consistent header/footer and smooth typography-driven layout.  
+- Highlights key projects (LMS portal, TODO app, Tasty-Bites, SkyCast, BookNest) plus a skills grid.  
+- Provides quick actions to download the resume and reach out via email, phone, or social profiles.  
 
-## 📋 About
+## Tech Stack
 
-This is a modern, responsive portfolio website built with clean HTML, CSS, and JavaScript. It features:
+- **HTML5** for semantic structure  
+- **CSS3** for responsive layout, grids, flexbox, animations, and hover effects  
+- **Google Fonts** (Poppins, Orbitron, Playfair Display, Montserrat, Cinzel)  
+- **Font Awesome** for iconography  
 
-- **Hero Section** - Engaging introduction with a call-to-action
-- **About Me** - Learn more about my background and expertise
-- **Projects** - Showcase of my work and projects
-- **Skills** - Technologies and tools I specialize in
-- **Contact** - Easy way to get in touch with me
+## Pages & Sections
 
-## 🛠️ Technologies Used
+- `index.html` (Home): Hero intro with role animation, short bio, CTA buttons for downloading `resume.pdf` and contacting via mail.  
+- `about.html`: Profile photo placeholder with narrative on experience, focus areas, and a “Connect With Me” mailto CTA.  
+- `project.html`: Project cards with carousel-style image wrappers, tech tags, detailed descriptions, and external links. Includes a skills section highlighting core technologies.  
+- `contact.html`: Modern split layout with simple form fields (email/message) and social/contact circles for email, LinkedIn, GitHub, and phone.  
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with animations and responsive design
-- **JavaScript** - Interactive features and smooth scrolling
-- **Google Fonts** - Beautiful typography (Poppins, Ms Madi, Lobster, Dancing Script, Chewy)
-- **Font Awesome** - Icon library for visual elements
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-My_Portfolio/
-├── index.html      # Main HTML file
-├── index.css       # Stylesheet
-├── README.md       # This file
-└── your-photo.jpg  # Profile image (placeholder)
+.
+├── index.html       # Home
+├── about.html       # About page
+├── project.html     # Projects + skills
+├── contact.html     # Contact/social links
+├── index.css        # Global styles and layout
+├── photos/          # Project/gallery assets
+├── resume.pdf       # Downloadable resume
+└── README.md
 ```
 
-## 🚀 Features
+## Running Locally
 
-✨ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-✨ **Modern Aesthetics** - Clean, professional, and visually appealing
-✨ **Smooth Navigation** - Smooth scrolling between sections
-✨ **Interactive Elements** - Engaging UI components and hover effects
-✨ **Call-to-Action** - Easy contact buttons for potential opportunities
+1) Clone or download the repository.  
+2) Open `index.html` directly in your browser, or start a simple server (e.g., `npx serve` or `python -m http.server 8000`) from the project root.  
+3) Navigate via the header to explore Home, About, Projects, and Contact.  
 
-## 💻 Core Skills
+## Customization Tips
 
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Web Development**: Responsive Design, UI/UX
+- Replace images inside `photos/` with your own assets; keep the same filenames or update the `src` paths in `project.html`.  
+- Update links (resume, project anchors, socials, mailto, and tel) to reflect your details.  
+- Tweak typography or colors in `index.css` as desired.  
 
-## 📧 Get in Touch
+## Contact
 
-Feel free to connect with me:
-- **Email**: [allamgowrisankar001@gmail.com](mailto:allamgowrisankar001@gmail.com)
-- **Live Portfolio**: [https://allamgowrisankar0001.github.io/My_Portfolio/](https://allamgowrisankar0001.github.io/My_Portfolio/)
-
-## 📄 License
-
-This portfolio is open source and available for personal and educational use.
+Questions or suggestions? Reach out at **[allamgowrisankar001@gmail.com](mailto:allamgowrisankar001@gmail.com)**.  
 
 ---
 
-**Built with ❤️ by Allam GowriSankar**
+Deployed preview: **[AGS.Dev Live](https://allamgowrisankar0001.github.io/CSA-HTML-TASK-4/)**.  !*** End Patch
