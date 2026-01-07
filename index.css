@@ -1,0 +1,492 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    position: relative;
+    
+}
+header{
+    /* margin:10px 0px; */
+    padding:0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header h2{
+    font-style: italic;
+}
+ul{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0px 30px;
+}
+a{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+}
+li a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0px;
+  height: 2px;
+  width: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.9;
+  border-radius: 2px;
+  transition: width 0.22s ease;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+.container{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-section{
+    width: 60%;
+}
+
+.hero-section h1{
+    font-size: 40px;
+}
+.hero-section p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.role::after {
+  content: "Web Developer";
+  animation: roleChange 5s ease-in-out infinite;
+  display: inline-block;
+  position: relative;
+  background-color: brown;
+  color: white;
+}
+.role-p{
+    overflow-y: hidden;
+    height: 2.0rem;
+}
+
+@keyframes roleChange {
+  0% {
+    content: "Web Developer";
+    bottom: 0;
+  }
+  25% {
+    bottom: 2rem;
+  }
+  50% {
+    content: "UI/UX Designer";
+    bottom: 0;
+  }
+  75% {
+    bottom: 2.5rem;
+  }
+  100% {
+    content: "Web Developer";
+    bottom: 0;
+  }
+}
+button{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.319);
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  font-size: 0.8rem;
+  font-family: "Poppins";
+}
+button:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transform: translateZ(20px);
+  box-shadow:inset 2px 2px 6px rgba(255, 255, 255, 0.33);
+  /* border: 1px solid white; */
+
+}
+
+.loki-text {
+  font-weight: 700;
+  animation: lokiFont 2s infinite;
+}
+
+@keyframes lokiFont {
+  0% {
+    font-family: 'Orbitron', sans-serif;
+  }
+  25% {
+    font-family: 'Playfair Display', serif;
+  }
+  50% {
+    font-family: 'Montserrat', sans-serif;
+  }
+  75% {
+    font-family: 'Cinzel', serif;
+  }
+  100% {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+i{
+  margin-left: 10px;
+  font-size: 17px;
+}
+/* about page */
+.about .container {
+  padding: 20px 40px;
+}
+.about-content {
+  margin: 5% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.about h2 {
+  font-size: 2.2rem;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+.about-text {
+  width: 60%;
+}
+.photo {
+  background-image: url("./photos/photo.jpg");
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.skills {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.skills h2 , .project h2{
+  padding: 0px 20px;
+
+  font-size: 2.2rem;
+  text-align: left !important;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container1 {
+  width: 90%;
+  /* overflow: hidden; */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.skills-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(109px,1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.skill-item {
+  text-decoration: none;
+  min-width: 109px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.skill-item i {
+  font-size: 3rem;
+}
+
+.skill-item.html {
+  background-color: orangered;
+}
+
+.skill-item.css {
+  background-color: #007bff;
+}
+
+.skill-item.js {
+  background-color: #f0db4f;
+  color: black;
+}
+
+.skill-item.react {
+  background-color: #61dafb;
+  color: black;
+}
+
+.skill-item.node {
+  background-color: #3c873a;
+}
+
+.skill-item.express {
+  background-color: #303030;
+}
+
+.skill-item.mongo {
+  background-color: #4db33d;
+}
+
+.skill-item.git {
+  background-color: #f1502f;
+}
+
+.skill-item.bootstrap {
+  background-color: #7952b3;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-wrapper{
+  height: 200px;
+}
+.container2{
+  width: 98%;
+  /* overflow: hidden; */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  gap: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px , 250px));
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  border:2px solid rgba(0, 0, 0, 0.43);
+  position: relative;
+  padding:0px;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+.box .skills-tag{
+  padding: 0px 10px !important;
+  margin: 0px 10px ;
+}
+.box .description{
+  padding: 0px 10px;
+  font-size: 0.9rem;
+}
+.box a h2 {
+  color: black;
+  font-size: 20px;
+}
+.skills-tag{
+  padding: 10px;
+  font-size: 13px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.image-wrapper{
+  display: flex;
+  padding: 0%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  animation: slide 8s infinite;
+  animation-play-state: paused;
+  animation-timing-function: ease-in-out;
+}
+.image-wrapper img{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  
+}
+.image-wrapper1 img{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  
+}
+.box:hover .image-wrapper{
+    animation-play-state:running;
+
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  12% {
+    transform: translateX(0%);
+  }
+
+  /* pause on first image */
+  25% {
+    transform: translateX(-100%);
+  }
+
+  37% {
+    transform: translateX(-100%);
+  }
+
+  /* pause on second image */
+  50% {
+    transform: translateX(-200%);
+  }
+
+  62% {
+    transform: translateX(-200%);
+  }
+
+  /* pause on third image */
+  75% {
+    transform: translateX(-300%);
+  }
+
+  87% {
+    transform: translateX(-300%);
+  }
+
+  /* pause on fourth image */
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+.contact-modern {
+  margin: 50px 10px;
+  display: flex;
+  width: 100vw;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+.contact-modern h1{
+  font-size: 50px;
+
+}
+.contact-modern p{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.socials{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 0px;
+  padding: 20px 0px;
+}
+.social-circle i{
+  font-size: 35px !important;
+
+
+  
+}
+.contact-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.433);
+  padding: 30px;
+  border-radius: 10px;
+}
+.form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.form input{
+  height: 40px;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.863);
+  border-radius:5px;
+  padding: 5px;
+}
+.form textarea{
+  height: 40px;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+
+}
+.send-button{
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  height: 50px !important;
+  width: 105% !important;
+  /* margin: 5px; */
+  cursor: pointer;
+}
+.send-button:hover{
+  cursor: pointer;
+}
+
+footer{
+  color: rgb(255, 255, 255) !important;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0px;
+}
+footer a{
+  margin: 20px;
+}
