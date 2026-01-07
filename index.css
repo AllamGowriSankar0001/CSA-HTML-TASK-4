@@ -359,7 +359,6 @@ i{
     transform: translateX(0%);
   }
 
-  /* pause on first image */
   25% {
     transform: translateX(-100%);
   }
@@ -368,7 +367,6 @@ i{
     transform: translateX(-100%);
   }
 
-  /* pause on second image */
   50% {
     transform: translateX(-200%);
   }
@@ -377,7 +375,6 @@ i{
     transform: translateX(-200%);
   }
 
-  /* pause on third image */
   75% {
     transform: translateX(-300%);
   }
@@ -386,7 +383,6 @@ i{
     transform: translateX(-300%);
   }
 
-  /* pause on fourth image */
   100% {
     transform: translateX(0%);
   }
